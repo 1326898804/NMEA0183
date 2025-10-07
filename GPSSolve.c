@@ -55,6 +55,7 @@ void solve_once() {
         }
     }
     //清理工作
+    memcpy(&gps_data,&gps_data_preview,sizeof(gps_data_t));
     memset(sovle_buff,0,buff_pointer);
     buff_pointer=0;
 }
