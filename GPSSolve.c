@@ -6,8 +6,8 @@
 #define BUFF_SIZE 1024
 static char sovle_buff[BUFF_SIZE]={0};
 static uint32_t buff_pointer=0;
-static gps_data_t gps_data_preview;
-static gps_data_t gps_data;
+static gps_data_t gps_data_preview={0};
+static gps_data_t gps_data={0};
 gps_data_t* get_gps_data() {
     return  &gps_data;
 }

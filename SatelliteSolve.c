@@ -288,7 +288,6 @@ int parse_gpgsv_single(const char* sentence, gps_gsv_t* gsv) {
     char* token;
     char* rest = buffer;
     int field_count = 0;
-    int satellite_data_index = 0;
 
     // 临时存储字符串字段
     char total_msg_str[4] = {0};

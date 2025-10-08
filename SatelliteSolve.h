@@ -68,8 +68,8 @@ typedef struct {
 } gps_gsv_t;
 
 //gps当前的卫星情况
-#define MAX_KIND_OF_SATELLITE 4 //最大的卫星种类，像我只有GPS，北斗，GLONASS
-#define EACH_KIND_OF_SATELLITE 5 //每个种类多少条信息。像我差不多有四条
+#define MAX_KIND_OF_SATELLITE 3 //最大的卫星种类，像我只有GPS，北斗，GLONASS
+#define EACH_KIND_OF_SATELLITE 4 //每个种类多少条信息。像我差不多有四条
 typedef struct {
     gps_gsa_t gsa[MAX_KIND_OF_SATELLITE];//当前连接的
     gps_gsv_t gsv[MAX_KIND_OF_SATELLITE][EACH_KIND_OF_SATELLITE];//观测到的
